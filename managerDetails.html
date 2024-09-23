@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="leader__res.css">
+    <script src="https://apis.google.com/js/api:client.js"></script>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #EFF3FF;
+            /* overflow: scroll; */
+            scroll-behavior: smooth;
+            font-family: 'Rubik', sans-serif;
+
+        }
+
+        nav {
+            font-family: 'Rubik';
+
+        }
+
+        nav img {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 85px;
+            margin: 15px;
+        }
+
+        nav ul {
+            margin-top: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            padding: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Rubik';
+            color: rgb(0, 92, 206);
+
+        }
+
+        #home {
+            color: red;
+            text-decoration: underline;
+
+        }
+
+        .fa-house {
+            color: red;
+        }
+
+        nav ul li a:hover {
+            color: red;
+            text-decoration: underline;
+
+        }
+
+        .login a {
+            border-radius: 8px;
+            padding: 10px 21px;
+            position: absolute;
+            right: 61px;
+            top: 35px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Rubik';
+            border: 2px solid black;
+            background-color: rgb(0, 92, 206);
+            color: white;
+            box-shadow: 1px 1px 1px black;
+
+        }
+
+        .login a:active {
+            transition: all 0s ease-in-out;
+            box-shadow: 0px 0px;
+        }
+
+
+        .container {
+            width: 745px;
+            padding: 8px;
+            font-family: 'Rubik';
+            position: absolute;
+            right: 40px;
+            top: 141px;
+        }
+
+        .form {}
+
+        form {
+            width: 50%;
+            /* display: flex;
+            flex-direction: column; */
+
+        }
+
+        span {
+            display: inline-block;
+            padding-bottom: 10px;
+            font-weight: bold;
+            margin-top: 14px;
+            /* width:293px; */
+        }
+
+        label {
+            width: 70px;
+        }
+
+        input {
+            font-size: 14px;
+            margin-right: 30px;
+            outline: none;
+            border: 1px solid #aaa6a6;
+            border-radius: 6px;
+            width: 293px;
+            padding: 13px;
+            display: inline-block;
+        }
+
+        .box {
+            display: inline-block;
+            display: flex;
+            flex-direction: column;
+            /* flex-wrap: wrap; */
+        }
+
+        .row {
+            width: 100%;
+            display: flex;
+        }
+
+        .btn {
+            margin-top: 27px;
+            /* margin-top: 0px; */
+            padding: 14px 14px;
+            border-radius: 7px;
+            background-color: #005CCE;
+            text-decoration: none;
+            color: white;
+            font-size: 17px;
+            cursor:pointer;
+
+        }
+
+
+
+
+
+        /* animation */
+
+        .base img {
+            position: relative;
+
+        }
+
+        .second_box img {left: -79px;
+    top: 18px;
+            animation-name: base;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes base {
+            from {
+                margin: 0px;
+            }
+
+            to {
+                margin: 30px
+            }
+        }
+
+        .slide img {
+            position: absolute;
+    left: 83px;
+    top: 102px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <img src="/public/img/logo.jpg" alt="" id="logo">
+        <ul>
+            <li><a id="home" href="/"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="/aboutus"><i class="fa-solid fa-address-card"></i> About Us</a></li>
+            <li><a href="/career"><i class="fa-solid fa-graduation-cap"></i> Careers</a></li>
+            <li><a href="#attendance"><i class="fa-solid fa-clipboard-user"></i> Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="login" id="login1">
+        <a href="/teamleader">Refresh</a>
+    </div>
+
+    <!-- Animatio  -->
+
+    <div class="second_box">
+
+        <div class="base">
+            <img src="/public/img/base.png" alt="base">
+        </div>
+
+        <div class="slide">
+            <img src="/public/img/slide.png" alt="slide">
+        </div>
+
+
+    </div>
+
+
+
+    <div class="container">
+        <div class="head">
+            <h2>Register Yourself as a TeamLeader</h2>
+            <p>If you are already connected with us then login! <a href="/leaderLogin" style="font-size: large;">Login</a></p>
+        </div>
+
+
+        <div class="form">
+
+            <form action="/teamleader" method="post">
+                <div class="row">
+
+                    <div class="box">
+                        <label for="name"><span>Name</span></label>
+                        <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+                    </div>
+
+                    <div class="box">
+                        <label for="email"><span>Email</span></label>
+                        <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+                    </div>
+                </div>
+                <div class="row2 row">
+                    <div class="box">
+                        <label for="phone"><span>Number</span></label>
+                        <input type="number" name="phone" id="phone" placeholder="Enter Your Phone"  pattern="[789][0-9]{9}" title="Please Enter a valid Phone" required>
+                    </div>
+
+                    <div class="box">
+                        <label for="company"><span>Organization/Institue</span></label>
+
+
+                        <input type="text" name="company" id="company" placeholder="Enter Your Organization/Institue Name" required>
+                    </div>
+                </div>
+                <div class="row3 row">
+                    <div class="box">
+                        <label for="companyId"><span>Password</span></label>
+                        <input type="password" name="password" id="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters" required>
+                    </div>
+                </div>
+
+                <button class="btn">Register As Admin</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

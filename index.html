@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Attendance System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+   
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html{scroll-behavior: smooth;}
+        body {
+            background-color: #EFF3FF;
+            /* overflow: scroll; */
+            
+        }
+
+        nav {
+            font-family: 'Rubik';
+
+        }
+
+        nav img {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 85px;
+            margin: 15px;
+        }
+
+        nav ul {
+            margin-top: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            padding: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Rubik';
+            color: rgb(0, 92, 206);
+
+        }
+
+        #home {
+            color: red;
+            text-decoration: underline;
+
+        }
+
+        .fa-house {
+            color: red;
+        }
+
+        nav ul li a:hover {
+            color: red;
+            text-decoration: underline;
+
+        }
+
+        .login a {
+            border-radius: 8px;
+            padding: 10px 21px;
+            position: absolute;
+            right: 61px;
+            top: 35px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Rubik';
+            border: 2px solid black;
+            background-color: rgb(0, 92, 206);
+            color: white;
+            box-shadow: 1px 1px 1px black;
+
+        }
+
+        .login a:active {
+            transition: all 0s ease-in-out;
+            box-shadow: 0px 0px;
+        }
+
+
+
+        /*Option Section*/
+        .option{   margin-top: 18px;
+             display: flex;
+    padding: 10px;
+
+        }
+        .option i{  
+            font-size: large;
+            padding-right: 4px;
+
+        }
+        .btn1{
+            /* font-size: 1.2rem; */
+    left: 64px;
+    top: 342px;
+    position: relative;
+    padding:16px;
+    background-color: #005CCE;
+    margin:5px;
+    border-radius: 8px;
+    
+        }
+        .btn1 a{
+            color:white;
+            font-size: 1.2rem;
+            padding: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Main Section */
+
+        .container {
+            display: flex;
+            /* width: 100%; */
+            height: 500px;
+            font-family: 'Rubik', sans-serif;
+
+        }
+
+        .container .first_box {
+            width: 50%;
+
+        }
+
+        .container .first_box h1 {
+            font-weight: bold;
+            position: relative;
+            top: 151px;
+            left: 77px;
+            font-size: 3.3rem;
+        }
+
+        .container .second_box {}
+
+
+
+
+
+        .base img {
+            position: relative;
+
+        }
+
+        .second_box img {
+            animation-name: base;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes base {
+            from {
+                margin: 0px;
+            }
+
+            to {
+                margin: 30px
+            }
+        }
+
+        .slide img {
+            position: absolute;
+            right: 121px;
+            top: 83px;
+        }
+
+
+        .first_box .feature {
+
+            color: #646464;
+            line-height: 36px;
+            font-size: 1.4rem;
+            left: 74px;
+            top: 403px;
+            position: absolute;
+            padding: 10px;
+        }
+
+        .feature .f1 {
+            font-weight: bold;
+        }
+
+        /* ul i:first-child{
+            color:red;
+        } */
+        .feature .f1:hover, .feature .f1 i:hover {
+            transition: all 100ms ease-in-out;
+            color: red;
+        }
+
+        .middle {
+            width: 100%;
+            top: 85px;
+            position: relative;
+            margin: 80px 0px;
+            padding: 10px;
+            background-color: #151E41;
+            height: 461px;
+
+            display: flex;
+
+
+        }
+
+        .middle .left {
+            width: 40%;
+            padding: 28px;
+            margin: 11px;
+            animation-name: left;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+
+
+
+        }
+
+        /* @keyframes left {
+            from{margin:0px}
+            to{
+                margin:10px;
+            }
+            
+        } */
+
+        .right {
+            width: 50%;
+            left: 99px;
+            top: 89px;
+            position: relative;
+            margin: 30px;
+            font-size: 2.7rem;
+            color: white;
+            font-family: 'Inter', sans-serif;
+        }
+
+
+        .btn {
+            margin-top: 0px;
+            padding: 12px 16px;
+            border-radius: 28px;
+            background-color: #005CCE;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            scroll-behavior: smooth;
+
+        }
+
+        .button {
+            margin-top: 20px;
+        }
+
+
+
+
+        /*feature1*/
+        .feature1 {
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Rubik';
+            width: 100%;
+        }
+
+        .feature1 .img {
+            margin-right: 10px;
+            padding: 10px;
+
+        }
+
+        .feature1 .img img {
+
+            right: -6px;
+    top: -1px;
+    position: relative;
+    width: 387px;
+        }
+
+        .feature1 .content {
+            width: 40%;
+
+        }
+
+        .feature1 .content h1 {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 64px -28px 27px 33px;
+        }
+
+        .feature1 .content p {
+
+            padding-top: 10px;
+            line-height: 22px;
+            margin-left: 34px;
+        }
+
+
+        .feature2 {
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Rubik';
+            width: 100%;
+        }
+
+        .feature2 .img2 img {
+
+            right: -6px;
+            top: -45px;
+            position: relative;
+            width: 465px;
+        }
+
+        .feature2 .content2 h1 {
+            display: inline-block;
+            font-size: 32px;
+            font-weight: bold;
+            margin: 64px -28px 27px 33px;
+        }
+
+        .feature2 .content2 p {
+
+            padding-top: 10px;
+            line-height: 22px;
+            margin-left: 34px;
+        }
+
+        .feature2 .content2{
+            width: 53%;
+    padding: 10px;
+        }
+
+        /*footer*/
+
+        footer {
+            align-items: center;
+            height: 51px;
+            display: flex;
+            background-color: black;
+            color: white;
+            justify-content: space-between;
+            padding:12px;
+
+        }
+
+        footer a ,footer i{
+            padding: 8px;
+            color: rgb(131, 173, 223);
+            overflow: hidden;
+        }
+
+        .fa-facebook:hover , .fa-twitter:hover{
+            transition: all 0.3s ease-in-out;
+            transform: translateY(-10px);
+            color:skyblue;
+        }
+
+        .fa-instagram:hover {
+            transition: all 0.3s ease-in-out;
+            transform: translateY(-10px);
+            color:red;
+        }
+
+        /* .base img:hover{
+            transition:all 1s ease-in-out;
+            transform: translateY(-10px);
+        } */
+
+
+        /*other*/
+        span {
+            background-image: linear-gradient(to right, rgb(55, 133, 178), rgb(22, 33, 233));
+            -webkit-background-clip: text;
+            /* it defines background painted area;*/
+            color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img src="/public/img/logo.jpg" alt="" id="logo">
+        <ul>
+            <li><a id="home" href="/"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="/aboutus"><i class="fa-solid fa-address-card"></i> About Us</a></li>
+            <li><a href="/career"><i class="fa-solid fa-graduation-cap"></i> Careers</a></li>
+            <li><a href="#attendance"><i class="fa-solid fa-clipboard-user"></i> Mark Attendance</a></li>
+        </ul>
+    </nav>
+
+    <div class="login" id="login1">
+        <a id ="login" href="/member">Member</a>
+    </div>
+
+
+    <!-- Main Section -->
+    <div class="container">
+        <div class="first_box">
+            <h1>We <span>transform</span> the way how your college functions</h1>
+
+            <div class="feature">
+                <div class="first f1"><i class="fa-solid fa-check" style="color: #646464;"></i> Real-time Data</div>
+                <div class="second f1"><i class="fa-solid fa-check" style="color: #646464;"></i> Accurate Attendance
+                </div>
+                <div class="third f1"><i class="fa-solid fa-check" style="color: #646464;"></i> Simplified Academic
+                    Processes</div>
+            </div>
+
+            <div class="option">
+
+                <div class="member btn1"><a href="/member"><i class="fa-solid fa-users"></i> Member</a></div>
+                <div class="tl btn1"><a href="/teamleader"><i class="fa-solid fa-user-secret"></i> Team Leader</a></div>
+            </div>
+        </div>
+
+
+        <div class="second_box">
+
+            <div class="base">
+                <img src="/public/img/base.png" alt="base">
+            </div>
+
+            <div class="slide">
+                <img src="/public/img/slide.png" alt="slide">
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <div class="middle" id="attendance">
+        <div class="left">
+            <img src="/public/img/trial.webp" alt="">
+        </div>
+
+        <div class="right">
+            Track Students Attendance with <span>FaceSync</span> Now
+            <div class="button"><a href="/" class="btn">Try our services</a></div>
+
+        </div>
+
+    </div>
+
+    <!-- services -->
+    <div class="feature1">
+        <div class="content">
+            <h1>Get Detailed Attendance Monitoring Reports</h1>
+            <p>On FaceSync Attendance Monitoring WebApp, you get detailed reports with all attendance data.</p>
+        </div>
+        <div class="img">
+            <img src="/public/img/side3.png" alt="img">
+        </div>
+
+    </div>
+
+
+    <div class="feature2">
+        <div class="img2">
+            <img src="/public/img/side2.jpg" alt="img">
+        </div>
+        <div class="content2">
+            <h1>Some key features of a face attendance system</h1>
+            <p>Facial Recognition: The core feature is the ability to recognize individuals based on their facial
+                features using a camera and facial recognition technology.</p>
+            <p>Enrollment: Users or employees are required to enroll in the system initially. During this process, their
+                facial templates are captured and stored for later recognition.</p>
+            <p>Real-Time Monitoring: The system provides real-time attendance monitoring, allowing organizations to
+                track who is present at any given time.</p>
+            <p>Accuracy: Modern facial recognition technology is highly accurate, reducing the likelihood of false
+                positives or false negatives.</p>
+            <p>User-Friendly: Face attendance systems are typically user-friendly, with users simply needing to show
+                their face to a camera for attendance to be recorded.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <footer>
+            Ⓒ 2023 Trace India Pvt Ltd. All rights reserved <span class="boss"><span class="facebook"><a href="/"><i
+                            class="fa-brands fa-facebook"></i></a></span>
+                <span class="insta"><a href="/"><i class="fa-brands fa-instagram"></i></a></span>
+                <span class="twitter"><a href="/"><i class="fa-brands fa-twitter"></i></a></span></span>
+        </footer>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/f131d87ed2.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f131d87ed2.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Your Attendance | FaceSync.com</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="nav.css"> -->
+    <style>
+
+* {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #EFF3FF;
+            /* overflow: scroll; */
+            scroll-behavior: smooth;
+            font-family: 'Rubik', sans-serif;
+
+        }
+
+        nav {
+            font-family: 'Rubik';
+
+        }
+
+        nav img {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 85px;
+            margin: 15px;
+        }
+
+        nav ul {
+            margin-top: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            padding: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Rubik';
+            color: rgb(0, 92, 206);
+
+        }
+
+        #home {
+            color: red;
+            text-decoration: underline;
+
+        }
+
+        .fa-house {
+            color: red;
+        }
+
+        nav ul li a:hover {
+            color: red;
+            text-decoration: underline;
+
+        }
+
+        .login a {
+            border-radius: 8px;
+            padding: 10px 21px;
+            position: absolute;
+            right: 61px;
+            top: 35px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Rubik';
+            border: 2px solid black;
+            background-color: rgb(0, 92, 206);
+            color: white;
+            box-shadow: 1px 1px 1px black;
+
+        }
+
+        .login a:active {
+            transition: all 0s ease-in-out;
+            box-shadow: 0px 0px;
+        }
+
+
+
+
+
+
+
+
+
+        .container{
+            display: flex;
+            width: 60%;
+            font-family: 'Rubik', sans-serif;
+            margin-top:100px;
+ 
+
+        }
+
+        .attendance {
+            display: flex;
+    background-color: rgb(0, 92, 206);
+    margin: 10px 14px;
+    /* background: red; */
+    width: 41%;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px 1px;
+
+        }
+
+        .attendance div{
+            margin:10px;
+        }
+        .attendance a {
+            text-decoration: none;
+    color: white;
+    font-size: 26px;
+    /* display: inline-block; */
+    padding: 31px;
+    width: 100%;
+    
+
+        }
+        .attendance:hover {
+           transition: all 250ms;
+           transform: translateY(-5px);
+           
+
+        }
+
+        .bg img{
+            position: absolute;
+    right: 0px;
+    top: 84px;
+    /* display: inline-block; */
+    width: 39.9rem;
+        }
+        .content{margin-top: 48px;
+    margin-left: -6px;
+width:65%}
+        .bg{
+            display: inline-block;
+        }
+
+        h1{font-size: 2.5rem;
+            display: inline-block;
+    margin: 24px 27px;
+        }
+
+        p{    margin-top: -12px;
+    margin-left: 25px;
+    line-height: 23px;
+    font-size: 1.1rem;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img src="/public/img/logo.jpg" alt="" id="logo">
+        <ul>
+            <li><a id="home" href="/"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="/aboutus"><i class="fa-solid fa-address-card"></i> About Us</a></li>
+            <li><a href="/career"><i class="fa-solid fa-graduation-cap"></i> Careers</a></li>
+            <li><a href="#attendance"><i class="fa-solid fa-clipboard-user"></i> Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="login" id="login1">
+        <a href="/logout">Logout</a>
+    </div>
+
+    <div class="content">
+        <h1>
+            Attendance Data
+        </h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti atque, doloribus optio nemo quidem velit ipsa repellat quis quaerat, odio eius nulla quae, sapiente eos mollitia repellendus. Ut, rem est.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci quasi, consequuntur non molestiae minima earum aperiam fugiat obcaecati reprehenderit animi, fugit deleniti necessitatibus,</p>
+    </div>
+
+
+
+        <div class="container">
+
+            
+        <div class="view attendance">
+    <a href="/userData">View Attendance</a>
+           
+           
+
+        </div>
+
+        <div class="mark attendance">
+        <a href="/markAttendance" >Mark Attendance</a>
+        </div>
+
+        <div class="bg">
+            <img src="./public/img/bg3.jpg" alt="">
+        </div></div>
+ 
+    
+
+    <script src="https://kit.fontawesome.com/f131d87ed2.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .main {
+            color:white;
+            background-color: black;
+            /* background-image:url('attend.png') center center ; */
+            background-size: cover;
+            font-family: 'Rubik';
+
+            /* background-color: red; */
+            display: flex;
+
+            /* overflow: scroll; */
+        }
+
+        .left {
+            width: 19%;
+            height: 100vh;
+            background-color: #222227;
+        }
+
+        img {
+            border-radius: 10px;
+    width: 101px;
+    margin: -2px;
+    padding: 0px;
+    width: 17vw;
+    cursor:pointer;
+
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box {
+            cursor: pointer;
+            /* background-color: gray; */
+        }
+
+        .box1 h3 {
+            margin-top: 13px;
+            font-size: 2rem;
+            color: white;
+            padding: 18px;
+        }
+
+        .box a {
+            display: inline-block;
+            cursor: pointer;
+            margin-left: 0px;
+            padding: 17px;
+            color: white;
+            font-size: 25px;
+            cursor: pointer;
+            width: 259px;
+            text-decoration: none;
+
+        }
+
+        .box:hover {
+            background-color: #454141;
+            /* opacity: 0.5; */
+            /* border-radius: 7px; */
+            /* box-shadow: 1px 1px black; */
+            border-radius: 8px;
+
+
+        }
+
+        .head {
+            font-weight: bold;
+            padding: 17px;
+            font-size: 1.3rem;
+            width: 81vw;
+        }
+
+        .head {
+            padding: 19px;
+            font-size: 1.4rem;
+            width: 81vw;
+        }
+
+        .data {
+            display: flex;
+        }
+
+        .data .box1 {
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 9px;
+            width: 277px;
+            height: 183px;
+            background-color: #ffffff;
+            margin: 19px 17px;
+        }
+
+
+        .right {
+            overflow: auto;
+            /* background-color: lightblue; */
+            height: 100vh;
+        }
+
+        .data2 {
+            display: flex;
+        }
+
+        .data2 .bigbox1 {
+            border-radius: 10px;
+            margin: 10px 17px;
+            padding: 10px;
+            width: 50%;
+            height: 50vh;
+            border: 2px solid black;
+        }
+
+        .data2 .bigbox2 {
+            border-radius: 10px;
+            margin: 10px 17px;
+            padding: 10px;
+            width: 50%;
+            height: 40vh;
+            border: 2px solid black;
+
+        }
+
+        .search {
+            padding: 10px;
+
+        }
+
+        .search input {
+            background-color: lightgray;
+            font-size: 1rem;
+            border-radius: 30px;
+            margin: 6px;
+            width: 99%;
+            padding: 11px 18px;
+        }
+        .fa-solid:before {
+            padding:7px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <!-- <div class="left"> -->
+            <!-- <div class="img"> -->
+                <!-- <img src="/public/img/logo.jpg" alt=""> -->
+                <!-- <div class="menu">
+                    <div class="box1">
+                        <h3>FaceSync</h3>
+                    </div>
+                    <div class="box">
+                        <a href="/profile"><i class="fa-solid fa-user"></i>  Profile</a>
+                    </div>
+                    <div class="box">
+                        <a href="/members"><i class="fa-solid fa-users"></i>  Members</a>
+                    </div>
+                    <div class="box">
+                        <a href="/data"><i class="fa-solid fa-database"></i>  Data</a>
+                    </div>
+                    <div class="box">
+                        <a href="/attendance01"><i class="fa-solid fa-clipboard-user"></i>  Attendance</a>
+                    </div>
+                    <div class="box">
+                        <a href="/"><i class="fa-solid fa-right-from-bracket"></i>  Logout</a>
+                    </div>
+
+                </div> -->
+
+
+            <!-- </div> -->
+        <!-- </div> -->
+        <div class="right">
+
+            <div class="head">Dashboard</div>
+
+
+            <!-- <div class="search" ><input type="search" style="background-color: #373b3c;" name="search" id="search" placeholder="search"></div> -->
+
+            <div class="data">
+                <div class="box1" style="background-color:#373b3c"><div class="box">
+                    <a href="/profile"><i class="fa-solid fa-user"></i>  Profile</a>
+                </div></div>
+                <div class="box1" style="background-color:#373b3c"> <div class="box">
+                    <a href="/members"><i class="fa-solid fa-users"></i>  Members</a>
+                </div></div>
+                <div class="box1" style="background-color:#373b3c"><div class="box">
+                    <a href="/data"><i class="fa-solid fa-database"></i>  Data</a>
+                </div></div>
+                <div class="box1" style="background-color:#373b3c"><div class="box">
+                    <a href="/attendance01"><i class="fa-solid fa-clipboard-user"></i>  Attendance</a>
+                </div></div>
+            </div>
+
+            <!-- <div class="data2">
+                <div class="bigbox1" style="background-color:#373b3c; "></div>
+                <div class="bigbox1" style="background-color:#373b3c;"></div>
+            </div> -->
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/f131d87ed2.js" crossorigin="anonymous"></script>
+
+    <script>
+        alert("You are admin now!")
+    </script>
+</body>
+
+</html>

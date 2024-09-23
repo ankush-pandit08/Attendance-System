@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+  <script src="https://apis.google.com/js/api:client.js"></script>
+<link rel="stylesheet" href="timepass.css">
+
+  <style>
+    body
+    {
+        scroll-behavior: smooth;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: rgb(250, 248, 253);
+      font-family: 'Poppins', sans-serif;
+
+    }
+
+    .container {
+      height: 100vh;
+      width: 100%;
+
+    }
+
+    .intro {
+      width: 37%;
+      left: 150px;
+      top: 35px;
+      position: absolute;
+      margin: 50px;
+      padding: 10px;
+
+    }
+
+    .intro h1 {
+      font-size: 3rem;
+      margin: 36px 0px;
+
+    }
+
+    .signup {
+      box-shadow: 1px 1px 13px -4px;
+
+      right: 214px;
+      position: absolute;
+      width: 460px;
+      height: 490px;
+      background-color: white;
+      top: 45px;
+      border-radius: 15px;
+    }
+
+    img {
+      width: 100px;
+      display: inline-block;
+    }
+
+    .web {
+      background-image: linear-gradient(to right, rgb(0, 92, 206), rgb(68, 68, 58));
+      -webkit-background-clip: text;
+      color: transparent;
+      font-weight: bold;
+      left: 11px;
+      display: inline-block;
+      position: relative;
+      bottom: 33px;
+    }
+
+    h1 span {
+      background-image: linear-gradient(to right,rgb(0, 92, 206), rgb(68, 68, 58));
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+
+    /*signup*/
+
+    .signup {
+      font-family: 'Rubik';
+
+
+    }
+
+    .signup span {
+      color: lightskyblue;
+    }
+
+    .signup h2 {
+      margin-top: 51px;
+      font-size: 21px;
+      text-align: center;
+    }
+
+    .signup form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .signup form label {
+      left: 42px;
+      top: 65px;
+      width: 80%;
+      position: relative;
+      padding: 10px 0px;
+      font-size: 0.9rem;
+    }
+
+    .signup form input {
+      left: 42px;
+      top: 65px;
+      position: relative;
+      /* margin-left: 30px; */
+      border-radius: 8px;
+      width: 80%;
+      padding: 10px;
+      margin: 11px 0px;
+      background-color: transparent;
+      border: 1px solid lightgray;
+    }
+
+    .btn {
+        box-shadow: 2px 2px 0px 1px black;
+
+      left: 3px;
+      top: 85px;
+      position: relative;
+      color: white;
+      margin-left: 40px;
+      margin-top: 25px;
+      font-size: 1.5rem;
+      background-color: rgb(0, 92, 206);
+      width: 132px;
+      padding: 11px;
+      border-radius: 10px;
+      font-family: 'Rubik';
+      cursor: pointer;
+    }
+
+    .btn2 {
+      font-weight: bold;
+      box-shadow: 2px 2px 0px 1px black;
+
+      left: 159px;
+      top: 8px;
+      position: relative;
+      color: black;
+      margin-left: 40px;
+      margin-top: 25px;
+      font-size: 1.5rem;
+      /* background-color: rgb(45, 192, 141); */
+      width: 132px;
+      padding: 11px;
+      border-radius: 10px;
+      font-family: 'Rubik';
+      cursor: pointer;
+      background-color: transparent;
+    }
+
+    .btn, .btn2{
+        text-decoration: none;
+    }
+
+    .btn:active,.btn2:active {
+      transition: all 0s ease-in-out;
+      box-shadow: 1px 1px;
+
+    }
+
+    .log {
+      text-align: center;
+    width: 100%;
+    top: 26px;
+    /* left: 102px; */
+    position: relative;
+    font-size: 1.1rem;
+
+
+    }
+
+   .signup:hover{
+      transition: all 1s ;
+
+      transform:scale(1.1)
+
+
+    }
+
+
+
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="intro"><img src="/public/img/logo.jpg" alt="">
+      <div class="web">facesync.com</div>
+      <h1>The Best Free Online <span>FaceSync</span></h1>
+      <p>you get detailed reports with all attendance data.</p>
+
+    </div>
+    <div class="signup">
+      <form action="/leaderLogin" method="post">
+
+        <h2>Welcome To <span>FaceSync</span></h2>
+
+        <div class="log">Don't have an account?  <a href="/teamleader">signup</a></div>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="Enter Your Email Address" required>
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="Enter Your Password" required>
+        <!-- <label for="password">Confirm Password</label>
+        <input type="password" placeholder="Confirm Your Password"> -->
+
+        <!-- <a href="/signup" class="btn">sign up</a> -->
+        <button class="btn" type="submit">login</button>
+      </form>
+    </div>
+  </div>
+
+
+
+
+</body>
+
+</html>

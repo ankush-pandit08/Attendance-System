@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Member</title>
+<style>
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        border:2px solid black;
+        width:600px;
+        margin:132px auto;
+        padding:18px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+    label{
+        color: #342e2e;
+    font-weight: bold;
+    padding: 10px;
+    font-family: sans-serif;
+    }
+    input{
+        padding:10px;
+        margin:10px;
+        border-radius: 4px;
+    }
+    button{
+        left: 460px;
+    position: relative;
+    margin: 9px;
+    font-weight: bold;
+    border-radius: 7px;
+    padding: 10px;
+    cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+    <form action="/members" method="post">
+
+        <div class="photo">
+            <label for="img">Upload Img</label>
+            <!-- <input type="image" src="" alt=""> -->
+            <input type="file" name="file" id="img">
+        </div>
+        <div class="details">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+            <label for="phone" >Phone</label>
+            <input type="text" name="phone" id="phone" style="margin-left:34px;" pattern="[789][0-9]{9}" title="Please Enter a valid Phone" required>
+
+            <label for="class">Class</label>
+            <input type="text" name="class" id="class" required>
+        </div>
+
+        <div class="credentials">
+            <label for="userid" >User Id</label>
+            <input type="text" name="userid" style="margin-left:-1px" id="userid" required>
+
+            <label for="password">Password</label>
+            <input type="text" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters" required>
+        </div>
+        <button type="submit" >Add Member</submit>
+    
+</form>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
